@@ -327,7 +327,23 @@ footer span:hover{
         height: 100%;
         border-radius: 20px;
         float: right;
+        animation: card 0.75s forwards 0s ease;
+        
     }
+    @keyframes card {
+        0% {
+          transform: scale(0.5);
+          transform: skewY(25deg);
+          opacity: 0;
+          box-shadow: none;
+        }
+        100% {
+          transform: scale(1);
+          transform: skewY(0deg);
+          opacity: 1;
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        }
+      }
     .ti{
         float: left;
         width: 165px;
@@ -338,6 +354,7 @@ footer span:hover{
         text-align: center;
         height: 40px;
         box-shadow: 1px 1px 3px;
+        animation: card 0.75s forwards 0s ease;
     }
     .ti h2 span{
         color: #ff274b;
@@ -371,6 +388,9 @@ footer span:hover{
         }
         #f{
             display: none;
+           }
+           .fa{
+            animation: card 0.75s forwards 0s ease;
            }
 
 }
@@ -476,7 +496,22 @@ footer span:hover{
         height: 100%;
         border-radius: 20px;
         float: right;
+        animation: card 0.75s forwards 0s ease;
     }
+    @keyframes card {
+        0% {
+          transform: scale(0.5);
+          transform: skewY(25deg);
+          opacity: 0;
+          box-shadow: none;
+        }
+        100% {
+          transform: scale(1);
+          transform: skewY(0deg);
+          opacity: 1;
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        }
+      }
     .ti{
         float: left;
         width: 165px;
@@ -488,6 +523,7 @@ footer span:hover{
         text-align: center;
         height: 40px;
         box-shadow: 1px 1px 3px;
+        animation: card 0.75s forwards 0s ease;
     }
     .ti h2 span{
         color: #ff274b;
@@ -509,6 +545,9 @@ footer span:hover{
         }
         #f{
             display: none;
+           }
+           .fa{
+            animation: card 0.75s forwards 0s ease;
            }
 }
 
@@ -613,7 +652,22 @@ footer span:hover{
         height: 100%;
         border-radius: 20px;
         float: right;
+        animation: card 0.75s forwards 0s ease;
     }
+    @keyframes card {
+        0% {
+          transform: scale(0.5);
+          transform: skewY(25deg);
+          opacity: 0;
+          box-shadow: none;
+        }
+        100% {
+          transform: scale(1);
+          transform: skewY(0deg);
+          opacity: 1;
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        }
+      }
     .ti{
         float: left;
         width: 165px;
@@ -625,6 +679,7 @@ footer span:hover{
         text-align: center;
         height: 40px;
         box-shadow: 1px 1px 3px;
+        animation: card 0.75s forwards 0s ease;
     }
     .ti h2 span{
         color: #ff274b;
@@ -646,6 +701,9 @@ footer span:hover{
         }
        #f{
         display: none;
+       }
+       .fa{
+        animation: card 0.75s forwards 0s ease;
        }
 }
 
