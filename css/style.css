@@ -22,28 +22,6 @@
 }
 /*-----------*/
 
-
-
-/*################################""*/
-.fa{
-    text-decoration: none;
-    color: #171a1c;
-}
-.fa:hover{
-    transform: translate(0px,-3px);
-}
-.fa-whatsapp:hover{
-    color: green;
-}
-.fa-envelope:hover{
-    color: rgb(220, 22, 68);
-}
-
-.fa-file-text-o{
-    float: right;
-}
-
-/*###########################################################################*/
 .proff-sign{
     display: none;
 }
@@ -222,6 +200,138 @@ footer span:hover{
 .copy{
     display: none;
 }
+
+/*      download button        */
+
+
+#wrap {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.btn-slide, .btn-slide2 {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+    padding: 0;
+    border-radius: 50px;
+    background: #fdfdfd;
+    border: 2px solid #0099cc;
+    margin: 10px;
+    transition: .5s;
+}
+#down{
+    color: #fff;
+}
+.btn-slide2 {
+    border: 2px solid #106fc1;
+}
+
+.btn-slide:hover {
+    background-color: #0099cc;
+}
+
+.btn-slide2:hover {
+    background-color: #27649a;
+}
+
+.btn-slide:hover span.circle, .btn-slide2:hover span.circle2 {
+    left: 100%;
+    margin-left: -45px;
+    background-color: #fdfdfd;
+    color: #0099cc;
+}
+
+.btn-slide2:hover span.circle2 {
+    color: #efa666;
+}
+.btn-slide2:hover #down {
+    color: #000;
+}
+
+.btn-slide:hover span.title, .btn-slide2:hover span.title2 {
+    left: 40px;
+    opacity: 0;
+}
+
+.btn-slide:hover span.title-hover, .btn-slide2:hover span.title-hover2 {
+    opacity: 1;
+    left: 40px;
+}
+
+.btn-slide span.circle, .btn-slide2 span.circle2 {
+    display: block;
+    background-color: #0099cc;
+    color: #fff;
+    position: absolute;
+    float: left;
+    margin: 3px 0 0 4px;
+    line-height: 42px;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+.btn-slide2 span.circle2 {
+    background-color: #106fc1;
+}
+
+.btn-slide span.title,
+  .btn-slide span.title-hover, .btn-slide2 span.title2,
+  .btn-slide2 span.title-hover2 {
+    position: absolute;
+    left: 90px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: #30abd5;
+    transition: .5s;
+}
+
+.btn-slide2 span.title2,
+  .btn-slide2 span.title-hover2 {
+    color: #106fc1;
+    left: 80px;
+  }
+
+.btn-slide span.title-hover, .btn-slide2 span.title-hover2 {
+    left: 80px;
+    opacity: 0;
+}
+
+.btn-slide span.title-hover, .btn-slide2 span.title-hover2 {
+    color: #fff;
+}
+
+    
+    
+    /*################################""*/
+    .fa{
+        text-decoration: none;
+        color: #171a1c;
+    }
+    .fa:hover{
+        transform: translate(0px,-3px);
+    }
+    .fa-whatsapp:hover{
+        color: green;
+    }
+    .fa-envelope:hover{
+        color: rgb(220, 22, 68);
+    }
+    
+    .fa-file-text-o{
+        float: right;
+    }
+    
+    /*###########################################################################*/
+
 #menu.is-active span:nth-child(1){
     transform: translate(0px, -2px) rotate(45deg);
 }
@@ -330,6 +440,7 @@ footer span:hover{
         animation: card 0.75s forwards 0s ease;
         
     }
+    
     @keyframes card {
         0% {
           transform: scale(0.5);
@@ -364,7 +475,7 @@ footer span:hover{
         height: 40px;
         line-height: 40px;
         margin-top: 5px;
-        font-size: 18px;
+        font-size: 15px;
         text-align: center;
         color: rgb(19, 18, 18);
         border-radius: 10px;
@@ -392,7 +503,25 @@ footer span:hover{
            .fa{
             animation: card 0.75s forwards 0s ease;
            }
-
+           .dl-button {
+            --duration: 4000;
+            --success: #16BF78;
+            --grey-light: #99A3BA;
+            --grey: #6C7486;
+            --grey-dark: #3F4656;
+            --light: #CDD9ED;
+            --shadow: rgba(18, 22, 33, .6);
+            --shadow-dark: rgba(18, 22, 33, .85);
+            display: block;
+            text-decoration: none;
+            perspective: 500px;
+            position: absolute;
+            top: 5px;
+            right: 40%;
+            
+            }
+            
+            
 }
 
 @media screen and (min-width:514px) and (max-width:624px){
@@ -549,6 +678,24 @@ footer span:hover{
            .fa{
             animation: card 0.75s forwards 0s ease;
            }
+           .dl-button {
+            --duration: 4000;
+            --success: #16BF78;
+            --grey-light: #99A3BA;
+            --grey: #6C7486;
+            --grey-dark: #3F4656;
+            --light: #CDD9ED;
+            --shadow: rgba(18, 22, 33, .6);
+            --shadow-dark: rgba(18, 22, 33, .85);
+            display: block;
+            text-decoration: none;
+            perspective: 500px;
+            position: absolute;
+            top: 5px;
+            right: 40%;
+            
+            }
+           
 }
 
 @media screen and (min-width:624px) and (max-width:900px){
@@ -705,6 +852,25 @@ footer span:hover{
        .fa{
         animation: card 0.75s forwards 0s ease;
        }
+       .dl-button {
+        --duration: 4000;
+        --success: #16BF78;
+        --grey-light: #99A3BA;
+        --grey: #6C7486;
+        --grey-dark: #3F4656;
+        --light: #CDD9ED;
+        --shadow: rgba(18, 22, 33, .6);
+        --shadow-dark: rgba(18, 22, 33, .85);
+        display: block;
+        text-decoration: none;
+        perspective: 500px;
+        position: absolute;
+        top: 5px;
+        right: 40%;
+        
+        }
+        
+        
 }
 
 @media screen and (min-width:900px) and (max-width:1200px) {
@@ -724,8 +890,8 @@ footer span:hover{
         border-radius: 0 0 100px 100px;
         padding-top: 10px;
     }
+ 
     
-   
 }
 
 @media screen and (min-width:1200px) {
