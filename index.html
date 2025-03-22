@@ -419,6 +419,12 @@
                 items.classList.toggle("is-active");
 
             }
+            let allImages = document.querySelectorAll("img");
+allImages.forEach((value)=>{
+    value.oncontextmenu = (e)=>{
+        e.preventDefault();
+    }
+})
         </script>
     </body>
 </html>
